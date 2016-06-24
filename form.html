@@ -1,0 +1,50 @@
+<html>
+<head></head>
+<body>
+  <header>Info sheet</header>
+  <form action="info.php" method="post">
+    <fieldset>
+      <legend>please fill the form</legend>
+
+      <label for="email">Your email</label>
+      <input id="email" type="email" required placeholder="enter email address" />
+      <label for="password1">Password:</label>
+      <input id="password1" type="password" required placeholder="enter password" />
+      <label for="password2">re-enter Password:</label>
+      <input id="password2" type="password" required placeholder="re-enter password" />
+      <label for="age">Your age: </label>
+      <input id="age" type="number" min="12" max="120" step="1" />
+      <label for="status">status: </label>
+      <label class="st" for="single">single</label>
+      <input id="status" type="radio" name="question" value="single" checked/>
+      <label class="st" for="married">married</label>
+      <input id="married" type="radio" name="question" value="married" />
+
+
+      <label for="ent">choose the forms of entertainment you like doing:</label>
+      <select id="ent" multiple>
+        <option>playing sports</option>
+        <option>watching movies</option>
+        <option>reading books</option>
+        <option>traveling</option>
+      </select>
+    
+      <label style="margin-top:10px;" for="adv">how did you find this site:</label>
+      <select id="adv">
+        <option>W24LCH</option>
+        <option>other</option>
+      </select>
+
+
+
+      <label style="margin-top:10px;" for="img">select image: </label>
+      <input id="img" type="file" accept="image/gif, image/jpeg, image/png" />
+      <label for="comment">tell us about yourself: </label>
+      <textarea id="comment" rows="5" cols="30"></textarea>
+      <button type="submit">Submit</button>
+      <button id="reset" type="reset" value="Reset">Reset</button>
+    </fieldset>
+  </form>
+
+</body>
+</html>
